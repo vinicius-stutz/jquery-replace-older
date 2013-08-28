@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>REplaceOlder for jQuery by vinicius-stutz</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>REplaceOlder for jQuery</h1>
+        <p>A jQuery plugin for placeholder in older browsers</p>
+
+        <p class="view"><a href="https://github.com/vinicius-stutz/jquery.replaceOlder">View the Project on GitHub <small>vinicius-stutz/jquery.replaceOlder</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/vinicius-stutz/jquery.replaceOlder/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/vinicius-stutz/jquery.replaceOlder/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/vinicius-stutz/jquery.replaceOlder">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use?</h2>
+
+<ul>
+<li>In <code>$(document).ready(function(){});</code> section;</li>
+<li>Put <code>$('input, textarea').placeholder();</code> code;</li>
+<li>Change the color of placeholder with <code>.placeholder { color: #999; }</code> in your CSS;</li>
+<li>Done!</li>
+</ul><h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features:</h2>
+
+<ul>
+<li>Very easy to use! Too light to load (only 6 KB)!</li>
+<li>Work in all browsers!</li>
+</ul><h2>
+<a name="install" class="anchor" href="#install"><span class="octicon octicon-link"></span></a>Install:</h2>
+
+<div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://code.jquery.com/jquery-latest.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"jquery.replaceOlder.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<h2>
+<a name="the-code" class="anchor" href="#the-code"><span class="octicon octicon-link"></span></a>The code:</h2>
+
+<div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+    <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'input, textarea'</span><span class="p">).</span><span class="nx">rOlder</span><span class="p">();</span>
+    <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;style </span><span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
+    <span class="nc">.placeholder</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#999</span><span class="p">;</span> <span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+</pre></div>
+
+<h2>
+<a name="the-html" class="anchor" href="#the-html"><span class="octicon octicon-link"></span></a>The html:</h2>
+
+<div class="highlight"><pre><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"#"</span> <span class="na">method=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"name"</span><span class="nt">&gt;</span>Nome:<span class="nt">&lt;/label&gt;&lt;br</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"name"</span> <span class="na">id=</span><span class="s">"name"</span> <span class="na">placeholder=</span><span class="s">"Informe seu nome completo"</span> <span class="na">tabindex=</span><span class="s">"1"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"mail"</span><span class="nt">&gt;</span>Endereço de e-mail:<span class="nt">&lt;/label&gt;&lt;br</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"mail"</span> <span class="na">id=</span><span class="s">"mail"</span> <span class="na">placeholder=</span><span class="s">"Informe seu e-mail"</span> <span class="na">tabindex=</span><span class="s">"2"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"message"</span><span class="nt">&gt;</span>Mensagem:<span class="nt">&lt;/label&gt;&lt;br/ &gt;</span>
+        <span class="nt">&lt;textarea</span> <span class="na">name=</span><span class="s">"message"</span> <span class="na">id=</span><span class="s">"message"</span> <span class="na">placeholder=</span><span class="s">"Escreva aqui sua mensagem"</span> <span class="na">tabindex=</span><span class="s">"3"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre></div>
+
+<h2>
+<a name="links" class="anchor" href="#links"><span class="octicon octicon-link"></span></a>Links:</h2>
+
+<ul>
+<li>Sample code <a href="http://db.vinicius-stutz.com/u/28591707/GitHub/jquery.replaceOlder/index.html">http://db.vinicius-stutz.com/u/28591707/GitHub/jquery.replaceOlder/index.html</a>
+</li>
+<li>Official website <a href="http://www.vinicius-stutz.com/">http://www.vinicius-stutz.com/</a>
+</li>
+</ul><p>Enjoy!</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/vinicius-stutz">vinicius-stutz</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
