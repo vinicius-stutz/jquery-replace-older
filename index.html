@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+  
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>REplaceOlder</title>
+
+		<link rel="stylesheet" type="text/css" href="http://dl.dropboxusercontent.com/u/28591707/GitHub/css/bootstrap.min.css" />
+
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="http://dl.dropboxusercontent.com/u/28591707/GitHub/jquery.replaceOlder/jquery.replaceOlder.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				
+				var aviso;
+
+				$('input, textarea').rOlder();
+
+				if ($.fn.rOlder.input && $.fn.rOlder.textarea) {
+					aviso = 'Seu navegador atual suporta nativamente o espaço reservado para campos de texto e textarea. O plugin não funcionará neste caso, uma vez que não é necessário. Teste o plugin em um navegador mais antigo, como o IE 9, 8 ou 7.';
+				} else if ($.fn.rOlder.input) {
+					aviso = 'Seu navegador atual suporta nativamente o espaço reservado para campos de texto, mas não para textarea. O plugin só funcionará em textareas.';
+				}
+
+				if (aviso) { alert(aviso); }
+
+			});
+		</script>
+
+	 	<style type="text/css">
+			input, textarea { color: #000; width: 300px; }
+			.placeholder { color: #999; } /* Para alterar a cor do placeholder */
+	 	</style>
+	
+	</head>
+	<body>
+		<h1>REplaceOlder</h1>
+		
+		<p><strong>A jQuery plugin for placeholder in older browsers</strong></p>
+		
+		<h2>How to use?</h2>
+		
+		<ol>
+			<li>In <code>$(document).ready(function(){});</code> section;</li>
+			<li>Put <code>$('input, textarea').placeholder();</code> code;</li>
+			<li>Change the color of placeholder with <code>.placeholder { color: #999; }</code> in your CSS;</li>
+			<li>Done!</li>
+		</ol>
+
+		<h2>Sample:</h2>
+
+		<form action="#" method="post">
+			<p>
+				<label for="name">Nome:</label>
+				<input type="text" name="name" id="name" placeholder="Informe seu nome completo" tabindex="1" />
+			</p>
+			<p>
+				<label for="mail">Endereço de e-mail:</label>
+				<input type="text" name="mail" id="mail" placeholder="Informe seu e-mail" tabindex="2" />
+			</p>
+			<p>
+				<label for="message">Mensagem:</label>
+				<textarea name="message" id="message" placeholder="Escreva aqui sua mensagem" tabindex="3"></textarea>
+			</p>
+		</form>
+
+		<h2>Features:</h2>
+
+		<p>Very easy to use! Too light to load (only 6 KB)!</p>
+		<p>Work in all browsers!</p>
+		
+		<h2>Install:</h2>
+
+		<pre><code>
+		&lt;script src=&quot;http://code.jquery.com/jquery-latest.js&quot;&gt;&lt;/script&gt;
+		&lt;script src=&quot;jquery.replaceOlder.js&quot;&gt;&lt;/script&gt;
+		</code></pre>
+
+		<h2>The code:</h2>
+		
+		<pre><code>
+		&lt;script type=&quot;text/javascript&quot;&gt;
+			$(document).ready(function() {
+				$('input, textarea').rOlder();
+			});
+		&lt;/script&gt;
+	 	&lt;style type=&quot;text/css&quot;&gt;
+			.placeholder { color: #999; }
+	 	&lt;/style&gt;
+		</code></pre>
+
+		<h2>The HTML:</h2>
+		
+		<pre><code>
+		&lt;form action=&quot;#&quot; method=&quot;post&quot;&gt;
+			&lt;p&gt;
+				&lt;label for=&quot;name&quot;&gt;Nome:&lt;/label&gt;&lt;br /&gt;
+				&lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; placeholder=&quot;Informe seu nome completo&quot; tabindex=&quot;1&quot; /&gt;
+			&lt;/p&gt;
+			&lt;p&gt;
+				&lt;label for=&quot;mail&quot;&gt;Endere&ccedil;o de e-mail:&lt;/label&gt;&lt;br /&gt;
+				&lt;input type=&quot;text&quot; name=&quot;mail&quot; id=&quot;mail&quot; placeholder=&quot;Informe seu e-mail&quot; tabindex=&quot;2&quot; /&gt;
+			&lt;/p&gt;
+			&lt;p&gt;
+				&lt;label for=&quot;message&quot;&gt;Mensagem:&lt;/label&gt;&lt;br/ &gt;
+				&lt;textarea name=&quot;message&quot; id=&quot;message&quot; placeholder=&quot;Escreva aqui sua mensagem&quot; tabindex=&quot;3&quot;&gt;&lt;/textarea&gt;
+			&lt;/p&gt;
+		&lt;/form&gt;
+		</code></pre>
+
+	</body>
+</html>
