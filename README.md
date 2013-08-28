@@ -14,8 +14,8 @@
  
 ##Install:
 ```html
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-		<script src="jquery.replaceOlder.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="jquery.replaceOlder.js"></script>
 ```
 ##The code:
 ```html
