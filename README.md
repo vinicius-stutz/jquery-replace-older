@@ -1,23 +1,23 @@
 # REplaceOlder for jQuery
 
-####A jQuery plugin for placeholder in older browsers
+A jQuery plugin for placeholder in older browsers
 
-##How to use?
+## How to use?
 - In `$(document).ready(function(){});` section;
 - Put `$('input, textarea').placeholder();` code;
 - Change the color of placeholder with `.placeholder { color: #999; }` in your CSS;
 - Done!
 
-##Features:
+## Features:
 - Very easy to use! Too light to load (only 6 KB)!
 - Work in all browsers!
  
-##Install:
+## Install:
 ```html
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="jquery.replaceOlder.js"></script>
 ```
-##The javascript:
+## The javascript:
 ```html
 <script type="text/javascript">
 	$(document).ready(function() {
@@ -25,13 +25,13 @@
 	});
 </script>
 ```
-##The css:
+## The css:
 ```html
 <style type="text/css">
 	.placeholder { color: #999; }
 </style>
 ```
-##The html:
+## The html:
 ```html
 <form action="#" method="post">
 	<p>
@@ -48,11 +48,11 @@
 	</p>
 </form>
 ```
-##Links:
+## Links:
 - Plugin page <http://vinicius-stutz.github.io/jquery.replaceOlder>
 - Official website <http://www.vinicius-stutz.com/>
 
-##MIT License
+## MIT License
 The MIT License (MIT)
 
 Copyright (c) 2013 Vinícius Stutz
